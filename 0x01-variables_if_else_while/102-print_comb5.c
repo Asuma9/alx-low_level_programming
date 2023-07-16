@@ -24,7 +24,7 @@ int main(void)
 			putchar(n2 + '0');
 			putchar(' ');
 			putchar(n3 + '0');
-			putchar(n2 + '0');
+			putchar(n4 + '0');
 
 			if (n1 != 9 || n2 != 8 || n3 != 9 || n4 != 9)
 			{
