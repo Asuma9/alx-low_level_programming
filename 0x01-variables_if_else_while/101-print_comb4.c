@@ -16,6 +16,7 @@ int main(void)
 
 		for (n2 = 0; n2 < 10; n2++)
 		{
+		
 		int n3;
 
 		for (n3 = 0; n3 < 10; n3++)
@@ -25,7 +26,7 @@ int main(void)
 				putchar(n1 + '0');
 				putchar(n2 + '0');
 				putchar(n3 + '0');
-				if (n1 != 7 || n2 != 8 || n2 != n3)
+				if (n1 != 7 || n2 != 8 || n3 != 9)
 				{
 					putchar(',');
 					putchar(' ');
