@@ -1,6 +1,5 @@
 #include <stdio.h>
 /**
-  *
   * main - main function description
   *
   * Return: 0 (success)
@@ -16,7 +15,7 @@ int main(void)
 
 		for (n2 = 0; n2 < 10; n2++)
 		{
-		
+
 		int n3;
 
 		for (n3 = 0; n3 < 10; n3++)
