@@ -1,10 +1,8 @@
 #include <stdio.h>
-
 /**
-  * main - main function here
-  *
-  * return: always 0
-  */
+ * main - main function here
+ * Return: 0 (always)
+ */
 
 int main(void)
 {
