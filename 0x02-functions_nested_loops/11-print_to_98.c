@@ -1,7 +1,7 @@
 #include "main.h"
 #include "stdio.h"
 /**
-  * print_to_98 - function to print natural logs n to 98
+  * print_to_98 - function to print natural numbers 0 to 98
   * @n: return value
   * Return: natural log
   */
