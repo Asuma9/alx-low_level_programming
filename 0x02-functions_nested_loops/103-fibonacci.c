@@ -6,11 +6,11 @@
 
 int main(void)
 {
-	unsigned long int limit = 4000000;
-	unsigned long int term1 = 1;
-	unsigned long int term2 = 2;
-	unsigned long int next;
-	unsigned long int sum = 2;
+	int limit = 4000000;
+	int term1 = 1;
+	int term2 = 2;
+	int next;
+	int sum = 2;
 
 	while (next <= limit)
 	{
@@ -20,6 +20,6 @@ int main(void)
 		term1 = term2;
 		term2 = next;
 	}
-	printf("%lu\n", sum);
+	printf("%d\n", sum);
 	return (0);
 }
