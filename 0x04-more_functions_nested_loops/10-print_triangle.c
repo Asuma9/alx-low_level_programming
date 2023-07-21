@@ -11,15 +11,15 @@ void print_triangle(int size)
 		_putchar('\n');
 	else
 	{
-		int row, hashes,spaces;
+		int row, hashes, spaces;
 
 		for (row = 1; row <= size; row++)
 		{
-			for (spaces = size -row; spaces >= 1; spaces--)
+			for (spaces = size - row; spaces >= 1; spaces--)
 			{
 				_putchar(' ');
 			}
-			for (hashes = 1; hashes <=row; hashes++)
+			for (hashes = 1; hashes <= row; hashes++)
 			{
 				_putchar(35);
 			}
