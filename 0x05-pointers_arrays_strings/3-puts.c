@@ -4,11 +4,12 @@
  * @str: pointer to be printed
  * Return: void
  */
+
 void _puts(char *str)
 {
-	for (; *str != '\0'; str++)
-	{
-		_putchar(str);
-	}
+	int s;
+
+	for (s = 0; str[s] != '\0'; s++)
+		_putchar(str[s]);
 	_putchar('\n');
 }
