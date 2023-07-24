@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * main - program to print a string in reverse followed by a new line
  * Return: 0 void
