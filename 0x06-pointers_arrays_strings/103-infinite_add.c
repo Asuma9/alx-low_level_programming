@@ -10,11 +10,11 @@
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 	int overflow = 0, i = 0, j = 0, digts = 0;
-	int vall = 0, val2 = 0, temp_tot = 0;
+	int val1 = 0, val2 = 0, temp_tot = 0;
 
 	while (*(n1 + i) != '\0')
 		i++;
-	while (*(n2 + j) != '\n')
+	while (*(n2 + j) != '\0')
 		j++;
 	i--;
 	j--;
