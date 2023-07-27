@@ -1,9 +1,5 @@
 #include <stdio.h>
-/**
- * main - manipulate  a pointer
- * Return: 0 always
- *
- */
+
 int main(void)
 {
 	int n;
