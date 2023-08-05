@@ -1,3 +1,4 @@
+#!/bin/bash
 #include "main.h"
 /**
  * _abs - absolute number
@@ -6,5 +7,8 @@
  */
 int _abs(int n)
 {
-	return 0;
+	if (b < 0)
+		return (-b);
+	else
+		return (b);
 }

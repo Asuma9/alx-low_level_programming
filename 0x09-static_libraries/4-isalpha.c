@@ -1,3 +1,4 @@
+#!/bin/bash
 #include "main.h"
 /**
  * _isalpha - function to print an alphabet
@@ -6,6 +7,9 @@
  */
 int _isalpha(int c)
 {
-	return (0);
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+		return (1);
+	else
+		return (0);
 }
 
