@@ -1,5 +1,3 @@
-#!/bin/bash
-#include <string.h>
 #include <stddef.h>
 #include "main.h"
 /**

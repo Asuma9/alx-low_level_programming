@@ -1,5 +1,3 @@
-#!/bin/bash
-#include "main.h"
 /**
  * _abs - absolute number
  * @n: number to test
@@ -7,8 +5,9 @@
  */
 int _abs(int n)
 {
-	if (b < 0)
-		return (-b);
+
+	if (n < 0)
+		return (-n);
 	else
-		return (b);
+		return (n);
 }

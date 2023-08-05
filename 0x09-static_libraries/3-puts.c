@@ -1,4 +1,3 @@
-#!/bin/bash
 #include "main.h"
 /**
  * _puts - fucntion that prints a string followed by new line to stdout

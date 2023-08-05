@@ -1,5 +1,3 @@
-#!/bin/bash
-#include "main.h"
 /**
  * *_memcpy - function that copies memory form src to dest
  * @dest: destination

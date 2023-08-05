@@ -1,5 +1,3 @@
-#!/bin/bash
-#include "main.h"
 /**
  * _islower - determine alphabet is lower
  * @c: interger to be determined

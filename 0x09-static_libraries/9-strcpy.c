@@ -1,5 +1,3 @@
-#!/bin/bash
-#include "main.h"
 /**
  * *_strcpy - string copy
  * @src: source

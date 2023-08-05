@@ -1,5 +1,3 @@
-#!/bin/bash
-#include "main.h"
 /**
  * _isupper - to capitalise alphabets
  * @c: character to test

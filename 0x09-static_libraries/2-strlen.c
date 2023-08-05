@@ -1,5 +1,3 @@
-#!/bin/bash
-#include "main.h"
 /**
  * _strlen - count string length
  * @s: string to count

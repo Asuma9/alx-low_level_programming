@@ -1,5 +1,3 @@
-#!/bin/bash
-#include "main.h"
 /**
  * _strcat - function to concatenate two strings
  * @dest: destination pointer

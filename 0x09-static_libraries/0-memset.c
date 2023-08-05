@@ -1,5 +1,3 @@
-#!/bin/bash
-#include "main.h"
 /**
  * *_memset - Function to fill memory with a  constant byte
  * @s: pointer

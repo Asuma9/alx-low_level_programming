@@ -1,6 +1,5 @@
-#!/bin/bash
-#include <stdio.h>
 #include "main.h"
+#include <string.h>
 /**
  * _strncat - function to concatenate two strings
  * @dest: destination pointer

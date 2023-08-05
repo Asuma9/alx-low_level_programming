@@ -1,5 +1,3 @@
-#!/bin/bash
-#include "main.h"
 /**
  * _isdigit - to print digits
  * @c: parameter to test

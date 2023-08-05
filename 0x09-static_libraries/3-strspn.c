@@ -1,5 +1,3 @@
-#!/bin/bash
-#include <string.h>
 #include "main.h"
 /**
  * _strspn - function to get the length of a prefix substring

@@ -1,5 +1,3 @@
-#!/bin/bash
-#include "main.h"
 /**
  * _strcmp - fucntion to compare to strings
  * @s1: string 1
