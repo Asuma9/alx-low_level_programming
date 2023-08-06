@@ -11,14 +11,16 @@ int main(void)
 	int i;
 
 	printf("%lu, ", term1);
-	for (i = 3; i <= 98; i++)
+	printf("%lu, ", term2);
+	for (i = 2; i <= 98; i++)
 	{
-		printf("%lu", term2);
 		next = term1 + term2;
 		term1 = term2;
 		term2 = next;
 		if (i != 98)
-			printf(", ");
+			printf("%lu, ", next);
+		else
+			printf("%lu", next);
 
 	}
 	printf("\n");
