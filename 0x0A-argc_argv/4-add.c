@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdlib.h>
 #include <stdio.h>
 /**
  * is_digit - check if a digit exists in astring
@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 			return (1);
 		}
 		}
-		sum = sum + _atoi(argv[num1]);
+		sum = sum + atoi(argv[num1]);
 	}
 	printf("%d\n", sum);
 	return (0);
