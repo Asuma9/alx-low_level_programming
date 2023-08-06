@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * is_digit - check if a digit exists in astring
- * @s: character to be passed
+ * @c: character to be passed
  *
  * Return: 0 sucess
  */
