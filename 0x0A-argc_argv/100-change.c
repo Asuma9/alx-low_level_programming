@@ -9,6 +9,7 @@
 int main(int argc, char *argv[])
 {
 	int cents;
+
 	if (argc != 2)
 	{
 		printf("Error\n");
@@ -28,13 +29,13 @@ int main(int argc, char *argv[])
 
 		int i;
 		int count = 0;
+
 		for (i = 0; i < noCoins; i++)
 		{
 			while (cents >= denoms[i])
 			{
 				cents -= denoms[i];
 				count++;
-				
 			}
 		}
 		printf("%d\n", count);
