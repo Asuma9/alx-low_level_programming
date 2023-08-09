@@ -3,7 +3,7 @@
 #include "main.h"
 /**
  * free_grid - free a 2d grid previously created for alloc-grid
- * @ grid: previous grid
+ * @grid: previous grid
  * @height: height
  * Return: NULL (failure)
  */
