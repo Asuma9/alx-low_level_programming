@@ -29,7 +29,7 @@ char *argstostr(int ac, char **av)
 	len += ac;
 	/* allocating total mem  for all arguments */
 
-	con_str = malloc(sizeof(char) * 1 + 1);
+	con_str =(char *)malloc(len + 1 * sizeof(char));
 	if (con_str == NULL)
 		return (NULL);
 
