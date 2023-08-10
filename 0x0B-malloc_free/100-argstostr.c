@@ -10,7 +10,7 @@
  */
 char *argstostr(int ac, char **av)
 {
-	int i;
+	int i, n;
 	char *con_str;
 	int offset = 0;
 	int len = 0;
@@ -18,29 +18,34 @@ char *argstostr(int ac, char **av)
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
-	
+
 	/* calculate total length */
 	for (i = 0; i < ac; i++)
 	{
-		len += strlen(av[i] + 1); /* new line char*/
+		for (n = 0; av[i][n]; n++)
+			len++;
 	}
+
+	len += ac;
 	/* allocating total mem  for all arguments */
 
-	con_str = (char *)malloc(len + ac * sizeof(char));
+	con_str = malloc(sizeof(char) * 1 + 1);
 	if (con_str == NULL)
 		return (NULL);
 
 	/* Concatenating the arguments with the newline chars */
-	
+
 	for (i = 0; i < ac; i++)
 	{
-		strcpy(con_str + offset, av[i]);
-		offset += strlen(av[i] + 1);
-		con_str[offset] = '\n';
-		offset++;
+		for (n = 0; av[i][n]; n++)
+		{
+			con_str[offset] = av[i][n];
+			offset++;
+		}
+		if (con_str[offset] == '\0')
+		{
+			con_str[offset++] = '\n';
+		}
 	}
-
-	/* Null-terminating the concatenated string */
-	con_str[offset - 1] = '\0';
 	return (con_str);
 }
