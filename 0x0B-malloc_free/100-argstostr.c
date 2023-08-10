@@ -10,7 +10,7 @@
  */
 char *argstostr(int ac, char **av)
 {
-	int i, n;
+	int i, j;
 	char *con_str;
 	int offset = 0;
 	int len = 0;
@@ -22,7 +22,7 @@ char *argstostr(int ac, char **av)
 	/* calculate total length */
 	for (i = 0; i < ac; i++)
 	{
-		for (n = 0; av[i][n]; n++)
+		for (j = 0; av[i][j]; n++)
 			len++;
 	}
 
@@ -37,9 +37,9 @@ char *argstostr(int ac, char **av)
 
 	for (i = 0; i < ac; i++)
 	{
-		for (n = 0; av[i][n]; n++)
+		for (j = 0; av[i][j]; n++)
 		{
-			con_str[offset] = av[i][n];
+			con_str[offset] = av[i][j];
 			offset++;
 		}
 		if (con_str[offset] == '\0')
