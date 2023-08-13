@@ -31,8 +31,8 @@ int count_words(char *str)
 {
 	int index = 0;
 	int words = 0;
-	
-	while(str[index] != '\0')
+
+	while (str[index] != '\0')
 	{
 		while (str[index] == ' ')
 			index++;
