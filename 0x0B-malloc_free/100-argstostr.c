@@ -22,14 +22,14 @@ char *argstostr(int ac, char **av)
 	/* calculate total length */
 	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; av[i][j]; n++)
+		for (j = 0; av[i][j]; j++)
 			len++;
 	}
 
-	len += ac;
+	len += ac + 1;
 	/* allocating total mem  for all arguments */
 
-	con_str = (char *)malloc(len + 1 * sizeof(char));
+	con_str = (char *)malloc(len + ac + 1 * sizeof(char));
 	if (con_str == NULL)
 		return (NULL);
 
@@ -37,14 +37,15 @@ char *argstostr(int ac, char **av)
 
 	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; av[i][j]; n++)
+		for (j = 0; av[i][j]; j++)
 		{
 			con_str[offset] = av[i][j];
 			offset++;
 		}
 		if (con_str[offset] == '\0')
 		{
-			con_str[offset++] = '\n';
+			con_str[offset] = '\n';
+			offset++;
 		}
 	}
 	return (con_str);
