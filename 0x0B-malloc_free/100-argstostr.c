@@ -46,7 +46,6 @@ char *argstostr(int ac, char **av)
 		{
 			con_str[offset] = '\n';
 			offset++;
-		
 		}
 	}
 	return (con_str);
