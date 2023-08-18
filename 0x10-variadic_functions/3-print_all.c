@@ -10,7 +10,7 @@ void print_all(const char * const format, ...)
 {
 	/*int all_count;*/
 	char c;
-	int i;
+	size_t i = 0;
 	float f;
 	int num;
 	char *s;
@@ -18,7 +18,7 @@ void print_all(const char * const format, ...)
 
 	va_start(all, format);
 
-	while (format && format[i] != '\0')
+	while (format[i] != '\0')
 	{
 		if (format[i] == 'c')
 		{
@@ -44,7 +44,7 @@ void print_all(const char * const format, ...)
 				printf("%s", s);
 			}
 		}
-		if (format[i + 1])
+		if (format[i + 1] && (format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's'))
 		{
 			printf(", ");
 		}
