@@ -8,44 +8,47 @@
  */
 void print_all(const char * const format, ...)
 {
-	int all_count;
+	/*int all_count;*/
 	char c;
 	int i;
 	float f;
+	int num;
 	char *s;
 	va_list all;
 
 	va_start(all, format);
 
-	while (format[all_count] != '\0')
+	while (format && format[i] != '\0')
 	{
-		switch (format[all_count])
+		if (format[i] == 'c')
 		{
-			case 'c':
-				c = (char)va_arg(all, int);
-				printf("%c", c);
-				break;
-			case 'i':
-				i = va_arg(all, int);
-				printf("%d", i);
-				break;
-			case 'f':
-				f = (float)va_arg(all, double);
-				printf("%f", f);
-				break;
-			case 's':
-				s = va_arg(all, char *);
-				if (s == NULL)
-					printf("(nil)");
-				else
-					printf("%s", s);
-				break;
-
-		
+			c = (char)va_arg(all, int);
+			printf("%c", c);
+		}
+		else if (format[i] == 'i')
+		{
+			num = va_arg(all, int);
+			printf("%d", num);
+		}else if (format[i] == 'f')
+		{
+			f = (float)va_arg(all, double);
+			printf("%f", f);
+		}else if (format[i] == 's')
+		{
+			s = va_arg(all, char *);
+			if (s == NULL)
+			{
+				printf("(nil)");
+			}else
+			{
+				printf("%s", s);
+			}
 		}
 		if (format[i + 1])
+		{
 			printf(", ");
-		all_count++;
+		}
+		i++;
 	}
 	va_end(all);
 	printf("\n");
