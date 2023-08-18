@@ -17,8 +17,7 @@ void print_all(const char * const format, ...)
 
 	va_start(all, format);
 
-	all_count = 0;
-		while (format[all_count] != '\0')
+	while (format[all_count] != '\0')
 	{
 		switch (format[all_count])
 		{
@@ -41,7 +40,11 @@ void print_all(const char * const format, ...)
 				else
 					printf("%s", s);
 				break;
+
+		
 		}
+		if (format[i + 1])
+			printf(", ");
 		all_count++;
 	}
 	va_end(all);
