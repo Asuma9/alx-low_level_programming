@@ -8,7 +8,6 @@
  */
 void print_all(const char * const format, ...)
 {
-	/*int all_count;*/
 	char c;
 	size_t i = 0;
 	float f;
@@ -47,9 +46,9 @@ void print_all(const char * const format, ...)
 		if (format[i + 1] && (format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || format[i] == 's'))
 		{
 			printf(", ");
+			i++;
 		}
-		i++;
 	}
-	va_end(all);
 	printf("\n");
+	va_end(all);
 }
