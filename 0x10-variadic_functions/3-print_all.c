@@ -11,6 +11,7 @@ void print_all(const char * const format, ...)
 	int i = 0;
 	char *s;
 	char *sep = "";
+
 	va_list types;
 
 	va_start(types, format);
