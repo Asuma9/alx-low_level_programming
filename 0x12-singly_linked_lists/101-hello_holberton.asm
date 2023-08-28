@@ -1,9 +1,5 @@
-/**
- * print_assembly - prints in assempbly language
- * Return: void (success)
- */
-	
-	; Declare needed c function
+
+; Declare needed c function
 
 		SECTION .data		; data section, initialised variables
 	msg:	db "Hello, Holberton", 0; c string null
@@ -13,7 +9,7 @@
 		extern printf		; c function call
 		global main		; standard gcc entry point
 
-	main
+	main:
 		push	rbp		; align stack frame set up
 
 		mov	rdi, fmt	; move fmt (variable) address fmt into the register
