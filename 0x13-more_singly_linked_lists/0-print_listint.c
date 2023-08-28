@@ -6,7 +6,7 @@
  */
 size_t print_listint(const listint_t *h)
 {
-	int counter;
+	size_t counter;
 	const listint_t *current;
 
 	counter = 0;
@@ -18,6 +18,5 @@ size_t print_listint(const listint_t *h)
 		current = current->next; /* point to next link */
 		counter++;
 	}
-	printf("\n");
 	return (counter);
 }
