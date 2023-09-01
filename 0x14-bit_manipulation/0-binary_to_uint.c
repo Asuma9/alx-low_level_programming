@@ -15,7 +15,8 @@ unsigned int binary_to_uint(const char *b)
 	{
 		return (sum_bin); /* check if b is empty */
 	}
-	count  = _strlen(b); /* keep track of what b points to */
+
+	count  = _strlen(b); /* keep track no of digits b points to */
 	for (j = count - 1; j >= 0; j--)
 	{
 		if (b[j] != '0' && b[j] != '1') /* check if b points to bin no */
@@ -41,7 +42,7 @@ int _strlen(const char *s)
  **power - prints base int exponetial
  **@base: input base
  **@exp: input exponent
- Return exponent of int
+ **Return: exponent of int
  */
 int power(int base, int exp)
 {
