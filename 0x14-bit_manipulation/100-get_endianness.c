@@ -13,9 +13,9 @@ int get_endianness(void)
 
 	if (*c == 1) /* 1st byte looks like 0x01 */
 	{
-		return (1);
+		return (0);
 	}
 	else /* 1st byte looks like 0x00 */
-		return (0);
+		return (1);
 
 }
