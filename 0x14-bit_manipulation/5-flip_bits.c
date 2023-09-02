@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  **flip_bits - returns no of bits to flip to get 4rm a no to next
- **@n: 
- **@m: 
+ **@n: integer no 1
+ **@m: integer no 2
  **Return: no of bits
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
