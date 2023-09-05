@@ -24,7 +24,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	buffer = malloc(sizeof(char) * letters + 1); /*+1 for the '\0' */
 	if (buffer == NULL)
 	{
-		close (filedes); /*close fd b4 returning */
+		close(filedes); /*close fd b4 returning */
 		return (0);
 	}
 
@@ -50,9 +50,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	/* clean up alloc mem and close opened fil */
+	/* clean up alloc mem and close opened file */
 	free(buffer);
-	close (filedes);
+	close(filedes);
 
 	return (rd_bytes);
 }
