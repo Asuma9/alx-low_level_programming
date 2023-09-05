@@ -36,7 +36,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (text_content == NULL)
 	{
 		close(filedes);
-		return (-1);
+		return (1);
 	}
 
 	wr_bytes = write(filedes, text_content, _strlen(text_content));
