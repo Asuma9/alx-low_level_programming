@@ -28,7 +28,7 @@ if (filename == NULL)
 return (-1);
 
 /* open filedes 4 writing/ create if doesnt exist/ truncate if does */
-filedes = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0666);
+filedes = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 if (filedes == -1)
 return (-1);
 
