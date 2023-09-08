@@ -13,7 +13,7 @@ int main(int argc, const char *argv[])
 
 	if (argc != 2)
 	{
-		write(STDERR_FILENO, "Usage: elf_header elf_filename\n", 31);
+		write(STDERR_FILENO, "Usage: elf_header elf_filename\n", 33);
 		exit(98);
 	}
 
@@ -246,7 +246,7 @@ void _close(int filedes)
 {
 	if (close(filedes) != -1)
 		return;
-	write(STDERR_FILENO, "Error: can't close filedes\n", 22);
+	write(STDERR_FILENO, "Error: can't close filedes\n", 28);
 	exit(98);
 }
 /**
