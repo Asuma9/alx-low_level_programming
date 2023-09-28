@@ -2,7 +2,7 @@
 /**
  **print_binary - prints binary reps of a number
  **@n: number to be reps in bin
- **Return: no in binary
+ **Return: num in binary
  */
 void print_binary(unsigned long int n)
 {
