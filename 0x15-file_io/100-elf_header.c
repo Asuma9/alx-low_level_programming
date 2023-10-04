@@ -1,9 +1,9 @@
 #include "main.h"
 /**
  **main - displays info contained in ELF h at start of ELF file
- **@argc: number of arguments
+ **@argc: number of command-line arguments
  **@argv: array of arguments
- **Return: 98 if elf not found
+ **Return: 98 if elf not found, 0 success
  */
 int main(int argc, const char *argv[])
 {
@@ -256,7 +256,7 @@ void _close(int filedes)
  **@count: track number of bytes read
  **Return: nothing
  */
-void _read(int filedes, char *dest, size_t count)
+ssize_t _read(int filedes, char *dest, size_t count)
 {
 	if (read(filedes, dest, count) != -1)
 		return;

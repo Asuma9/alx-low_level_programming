@@ -34,7 +34,7 @@ void elf_version(const unsigned char *head);
 int elf_data(const unsigned char *head);
 size_t elf_class(const unsigned char *head);
 void elf_magic(const unsigned char *head);
-void _read(int filedes, char *dest, size_t count);
+ssize_t _read(int filedes, char *dest, size_t count);
 void _close(int filedes);
 int _strncmp(const char *s1, const char *s2, size_t n);
 
